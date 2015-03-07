@@ -23,9 +23,9 @@
                     </h2>
                     <div class="date">{{ post.created_at|date:"Y / m / d" }}</div>
                 </div>
-                {% if post.photo %}
+                {% if post.new_photo %}
                 <div class="thumbnail">
-                    <img src="{{ post.photo }}" alt="">
+                    <img src="{{ post.new_photo.url }}" alt="">
                 </div>
                 {% else %}
                 <div class="thumbnail thumbnail-default"></div>

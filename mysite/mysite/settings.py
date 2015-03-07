@@ -105,8 +105,15 @@ STATIC_ROOT = 'staticfiles'
 # Turn off DEBUG mode
 DEBUG = False
 
-TEMPLATE_DEBUG = False
+TEMPLATE_DEBUG = DEBUG
 
+DROPBOX_CONSUMER_KEY = 'ltovyr98wdsa8g3'
+DROPBOX_CONSUMER_SECRET = 'glq76yr4r5zs3vm'
+
+DROPBOX_ACCESS_TOKEN = '753vmqoow9nfx47j'
+DROPBOX_ACCESS_TOKEN_SECRET = 'ou1t1tbl1rjbqde'
+
+DEFAULT_FILE_STORAGE = 'django_dropbox.storage.DropboxStorage'
 # Import all of local settings if the file exists
 try:
     from .local_settings import *
