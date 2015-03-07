@@ -5,4 +5,4 @@ gunicorn==19.1.1
 static3==0.5.1
 psycopg2==2.5.4
 djangorestframework==2.4.4
--e git+https://github.com/daikeren/django-dropboxegg=django_dropbox
+-e git+https://github.com/daikeren/django-dropbox@658bb6ae304378253ad3ece0acf50162bc53e98d#egg=django_dropbox-origin/HEAD
